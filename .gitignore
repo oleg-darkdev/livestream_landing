@@ -11,3 +11,4 @@ yarn-error.log
 /.vercel
 src/lib/examples
 src/routes/all
+src/all
