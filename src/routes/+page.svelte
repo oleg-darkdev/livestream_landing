@@ -1,15 +1,71 @@
 <script>
-	// import {  } from '$lib/shared';
-	// import {  } from '$lib/widgets';
-  // import {  } from '$lib/entities'
+	import { Header, Footer, AsideBtns, FeedbackSlider, AnimatedLogo, BackgroundImageAlt, Gallery, Price, Features, About, Faq } from '$widgets';
 </script>
 
-
 <svelte:head>
-  <title>Title</title>
+	<title>LiveLab</title>
 </svelte:head>
 
 
-<style>
+<Header />
 
-</style>
+<AsideBtns />
+
+<BackgroundImageAlt />
+
+<main class="pb-40">
+	<div class="">
+		<Features />
+
+		<About />
+
+		<Price />
+
+		<!-- <Gallery /> -->
+
+
+
+
+
+		<Faq />
+
+		<FeedbackSlider />
+		<!-- <About /> -->
+		<!-- <GettingStarted /> -->
+		<!-- <Navigation /> -->
+		<!-- <BrandColors /> -->
+		<!-- <ColorCombos /> -->
+
+		<!-- <DateTimePickers /> -->
+		<!-- <Buttons /> -->
+		<!-- <Cards /> -->
+		<!-- <Loader /> -->
+
+		<!-- <SourceCode /> -->
+		<!-- <Fonts /> -->
+		<!-- <Attention /> -->
+		<!-- <Inputs /> -->
+		<!-- <Headings /> -->
+		<!-- <Steps /> -->
+		<!-- <Tables /> -->
+
+		<!-- <AltLists /> -->
+		<!-- <Razors /> -->
+		<!-- <Banners /> -->
+		<!-- <GlitchEffect /> -->
+		<!-- <BackgroundImage /> -->
+		<!-- <Aside /> -->
+		<!-- <Email /> -->
+	</div>
+</main>
+
+<AnimatedLogo />
+
+<Footer />
+
+<!-- <GlitchEffect /> -->
+<!-- <GlitchEffect /> -->
+<!-- <GlitchEffect /> -->
+<!-- <GlitchEffect /> -->
+<!-- <GlitchEffect /> -->
+<!-- <GlitchEffect /> -->
