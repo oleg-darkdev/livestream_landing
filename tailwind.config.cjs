@@ -3,12 +3,13 @@ module.exports = {
 	theme: {
 		extends: {},
 		fontFamily: {
-			inter: ['inter', 'sans-serif'],
-			poppins: ['poppins', 'serif'],
-			'fira-mono': ['fira-mono']
+			// inter: ['inter', 'sans-serif'],
+			// poppins: ['poppins', 'serif'],
+			// 'fira-mono': ['fira-mono']
 		}
-	},
-	plugins: [require('@tailwindcss/typography'), require('daisyui')],
+  },
+  // , require('daisyui')
+	plugins: [require('@tailwindcss/typography')],
 	// daisyUI config (optional)
 	daisyui: {
 		themes: [

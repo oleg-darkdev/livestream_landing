@@ -12,8 +12,14 @@ const config = {
 			$features: 'src/lib/features',
 			$processes: 'src/lib/processes',
 			$widgets: 'src/lib/widgets',
+			$examples: 'src/lib/examples',
+			$icons: 'src/static/icons',
+			$images: 'src/static/images',
 			$stores: 'src/lib/shared/stores',
-			$shared: 'src/lib/shared'
+			$shared: 'src/lib/shared',
+			// $svelteThemes: 'src/lib/shared/svelteThemes',
+			// svelteThemes
+			$actions: 'src/lib/shared/actions'
 		}
 	},
 
