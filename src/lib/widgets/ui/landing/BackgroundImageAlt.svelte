@@ -8,18 +8,16 @@
 </section>
 
 <style>
-	
-
-	@font-face {
-		src: url('https://dl.dropbox.com/s/5a50wah07j2fwkv/Quantum.otf');
-		font-family: 'quantum';
-	}
 
 	@font-face {
 		src: url('https://dl.dropbox.com/s/xo7a1zwqc4mhjvb/Hiatus.ttf?dl=0');
 		font-family: 'hiatus';
 	}
-
+  @font-face {
+    font-family: "Pabricks";
+    src: url("/fonts/Pabricks.ttf") format("truetype");
+    font-weight: 200;
+  }
 	section {
 		margin: 0;
 		padding: 0;
@@ -36,7 +34,7 @@
 		background-attachment: fixed;
 		color: var(--white);
 		/*FONTS*/
-		--display: 'quantum', cursive;
+
 		--mono: 'ibm plex mono', monospace;
 		--hiatus: 'hiatus', cursive;
 		/*COLORS*/
@@ -50,7 +48,8 @@
 		--teal: #fff;
 		/*GRADIENTS*/
 		/*IMAGES*/
-		--backimg: url('https://images.unsplash.com/photo-1601042879364-f3947d3f9c16?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1534&q=80');
+    /* https://images.unsplash.com/photo-1601042879364-f3947d3f9c16?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1534&q=80 */
+		--backimg: url('/images/banner.svg');
 		/*OTHER*/
 	}
 
@@ -88,7 +87,8 @@
 		grid-row: 1;
 		grid-column: 1;
 		font-size: 10rem;
-		color: var(--white);
+		color: #ff2d24;
+    font-family: "Pabricks";
 		text-shadow: 0 0 1px #fff, 0 0 3px #fff, 0 0 5px #fff, 0 0 14px #f9f002, 0 0 7px #f9f002,
 			0 0 9px #f9f002, 0 0 11px #f9f002, 0 0 13px #f9f002;
 	}
@@ -99,17 +99,24 @@
 		font-size: 4rem;
 		transform: rotate(-3deg);
 		margin: 0;
-		/* color: #f9f002; */
+		color: #ff2d24;
 		font-weight: normal;
 		text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 22px var(--teal),
 			0 0 42px var(--teal), 0 0 62px var(--teal), 0 0 82px var(--teal), 0 0 151px var(--teal);
-		margin-top: 6rem;
+		margin-top: 10rem;
 	}
 
 	@media (max-width: 991px) {
 		#header {
 			max-width: 480px;
 		}
+  .headtext h1 {
+		font-size: 5rem;
+	}
+	.headtext h3 {
+		font-size: 3rem;
+    margin-top: 6rem;
+  	}
 	}
 	@media (max-width: 767px) {
 		#header {
