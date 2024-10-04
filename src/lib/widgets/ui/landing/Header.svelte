@@ -67,7 +67,7 @@
 			</div>
 
 			<div class="non-btn-group mx-auto ">
-				<a href='./login' target="_blank" style='height: 80px; width: 200px;' class="btn group transition duration-300 ease-in-out delay-150  btn--secondary hover:bg-black">
+				<a href='/' target="_blank" style='height: 80px; width: 200px;' class="btn group transition duration-300 ease-in-out delay-150  btn--secondary hover:bg-black">
 					<div class="btn__content ">login</div>
 					<span class="btn__label fg-black">login</span>
 				</a>
