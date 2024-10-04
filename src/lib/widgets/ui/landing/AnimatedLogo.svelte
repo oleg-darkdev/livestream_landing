@@ -121,17 +121,34 @@
 
 <section class='overflow-hidden '>
 <div class="glitch" data-trick="LiveLab">LiveLab</div>
-<img src="/images/favicon.svg" class='w-64 h-64 z-30 absolute left-[53rem] -mt-40' alt="">
+<!-- <img src="/images/favicon.svg" class='w-64 h-64 z-30 absolute left-[53rem] -mt-40' alt=""> -->
 <div id="cyberpunk-animation" class="canvas-animation"></div>
 
 </section>
 
 
 <style>
-    @font-face {
+@font-face {
   font-family: "Pabricks";
   src: url("/fonts/Pabricks.ttf") format("truetype");
   font-weight: 200;
+}
+
+@media (max-width: 991px) {
+  .glitch {
+    font-size: 5rem;
+  }
+  .canvas-animation {
+    height: 20vh;
+  }
+}
+@media (min-width: 991px) {
+  .glitch {
+    font-size: 10rem;
+  }
+  .canvas-animation {
+    height: 100vh;
+  }
 }
 section {
   align-items: center;
@@ -152,7 +169,6 @@ section {
   position: absolute;
   z-index: 1;
   width: 90vw;
-  height: 100vh;
   overflow: hidden;
 }
 
@@ -160,7 +176,6 @@ section {
   z-index: 2;
   top: 0;
   color: white;
-  font-size: 10rem;
   position: relative;
 }
 .glitch::after {
@@ -224,7 +239,7 @@ section {
     clip: rect(1rem, 99.99rem, 6rem, 0);
   }
   48% {
-    clip: rect(10rem, 99.99rem, 12rem, 0);
+    clip: rect(4rem, 99.99rem, 12rem, 0);
   }
   52% {
     clip: rect(4rem, 99.99rem, 2rem, 0);
@@ -236,7 +251,7 @@ section {
     clip: rect(12rem, 99.99rem, 8rem, 0);
   }
   64% {
-    clip: rect(9rem, 99.99rem, 10rem, 0);
+    clip: rect(9rem, 99.99rem, 4rem, 0);
   }
   68% {
     clip: rect(8rem, 99.99rem, 2rem, 0);
@@ -245,7 +260,7 @@ section {
     clip: rect(12rem, 99.99rem, 12rem, 0);
   }
   76% {
-    clip: rect(6rem, 99.99rem, 10rem, 0);
+    clip: rect(6rem, 99.99rem, 4rem, 0);
   }
   80% {
     clip: rect(2rem, 99.99rem, 12rem, 0);
@@ -305,7 +320,7 @@ section {
     clip: rect(1rem, 99.99rem, 6rem, 0);
   }
   48% {
-    clip: rect(10rem, 99.99rem, 12rem, 0);
+    clip: rect(4rem, 99.99rem, 12rem, 0);
   }
   52% {
     clip: rect(4rem, 99.99rem, 2rem, 0);
@@ -317,7 +332,7 @@ section {
     clip: rect(12rem, 99.99rem, 8rem, 0);
   }
   64% {
-    clip: rect(9rem, 99.99rem, 10rem, 0);
+    clip: rect(9rem, 99.99rem, 4rem, 0);
   }
   68% {
     clip: rect(8rem, 99.99rem, 2rem, 0);
@@ -326,7 +341,7 @@ section {
     clip: rect(12rem, 99.99rem, 12rem, 0);
   }
   76% {
-    clip: rect(6rem, 99.99rem, 10rem, 0);
+    clip: rect(6rem, 99.99rem, 4rem, 0);
   }
   80% {
     clip: rect(2rem, 99.99rem, 12rem, 0);
