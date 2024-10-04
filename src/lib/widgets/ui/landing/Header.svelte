@@ -35,7 +35,7 @@
 	<!-- </span> -->
 
 
-	<section class="  w-full" style="">
+	<section class="w-full" style="">
 		<nav class='justify-between  flex  '>
 			<!-- {#each navigation as nav}
 				<a href="{nav.href}" class="non-btn-group">
@@ -46,15 +46,15 @@
 				</a>
 
 			{/each} -->
-			<div class="btn-group mx-auto">
-				<!-- {#each navigation as nav}
+			<div class="btn-group hide-sm mx-auto">
+				{#each navigation as nav}
 				<a href="{nav.href}"  class="group transition duration-300 ease-in-out delay-150  btn hover:bg-black ">
 					<div class="btn__content group-hover:fg-yellow">{nav.title}</div>
 					<span class="btn__label ">{nav.title}</span>
 				</a>
-				{/each} -->
-				<!--
-					{#each navigation as nav}
+				{/each}
+
+					<!-- {#each navigation as nav}
 				<a href="{nav.href}" class="non-btn-group">
 					<div class="btn">
 						<div class="btn__content">{nav.title}</div>
@@ -62,16 +62,16 @@
 					</div>
 				</a>
 
-			{/each}
-				 -->
+			{/each} -->
+
 			</div>
 
-			<!-- <div class="non-btn-group">
-				<a href='./login' target="_blank" class="btn group transition duration-300 ease-in-out delay-150  btn--secondary hover:bg-black">
+			<div class="non-btn-group mx-auto ">
+				<a href='./login' target="_blank" style='height: 80px; width: 200px;' class="btn group transition duration-300 ease-in-out delay-150  btn--secondary hover:bg-black">
 					<div class="btn__content ">login</div>
 					<span class="btn__label fg-black">login</span>
 				</a>
-			</div> -->
+			</div>
 
 		</nav>
 	</section>
@@ -80,4 +80,9 @@
 
 <style>
 
+@media (max-width: 1200px) {
+  .hide-sm {
+    display: none;
+  }
+}
 </style>
