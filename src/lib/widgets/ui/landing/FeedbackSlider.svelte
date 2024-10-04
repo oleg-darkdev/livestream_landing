@@ -7,19 +7,19 @@
 </script>
 
 
-<div class='w-full -mb-10 pt-10' style='height: 400px;'>
-<div class="cybr-sldr w-8/12 mx-auto"> 
+<div class='w-full -mb-10 pt-10 lg:h-[400px] xl:h-[400px] h-[240px]' style=''>
+<div class="cybr-sldr w-8/12 mx-auto">
 
 <h2 class="cyber-h ">Отзывы о нас.</h2>
   {#if browser}
-    
+
 	<Carousel
       autoplay
       autoplayDuration={2000}
       timingFunction="linear"
       dots={false}
       swiping={true}
-      
+
       let:showPrevPage
       let:showNextPage
       >
