@@ -13,8 +13,15 @@
 		z-index: 999 !important;
 	}
 
-	
+
 	.fixed-bottom {
 		bottom: 0 !important;
 	}
+
+  @media (max-width: 991px) {
+  footer {
+    display: none;
+  }
+}
+
 </style>
